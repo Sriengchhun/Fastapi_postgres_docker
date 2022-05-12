@@ -1,0 +1,16 @@
+## Open database shell
+## goto database
+psql chhun -h 127.0.0.1 -d mydb
+
+
+docker-compose exec db psql --username=fastapi_traefik --dbname=fastapi_traefik
+\c fastapi_traefik (check connection)
+\d (check table) 
+\dt (chekc only table)
+\q (exit)
+
+
+# select from table
+select * from "Users_Table";
+
+select * from "My_table";
